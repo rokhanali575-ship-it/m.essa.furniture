@@ -22,6 +22,7 @@ body {
     background-color: var(--bg-dark);
     color: var(--text-light);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .container {
@@ -64,7 +65,7 @@ body {
     color: #000;
 }
 
-/* NAVBAR */
+/* NAVBAR & FIXED LOGO SIZE */
 .navbar {
     background-color: var(--bg-nav);
     border-bottom: 1px solid var(--border-gold);
@@ -86,12 +87,19 @@ body {
     gap: 12px;
 }
 
+/* LOGO FIX: Strictly controlled dimensions */
 .brand-logo-img {
-    width: 42px;
-    height: 42px;
+    width: 42px !important;
+    height: 42px !important;
+    max-width: 42px !important;
+    max-height: 42px !important;
+    min-width: 42px !important;
+    min-height: 42px !important;
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid var(--gold);
+    display: block;
+    flex-shrink: 0;
 }
 
 .brand-text {
@@ -208,8 +216,12 @@ body {
 
 /* FEATURES SECTION */
 .features-section {
-    padding: 60px 0;
+    padding: 70px 0;
     border-bottom: 1px solid var(--border-dark);
+}
+
+.text-center {
+    text-align: center;
 }
 
 .grid-3 {
@@ -309,14 +321,65 @@ body {
     font-size: 14px;
 }
 
-/* ABOUT & FOOTER */
+/* ABOUT SECTION DETAILED STYLING */
 .about-section {
-    padding: 60px 0;
+    padding: 80px 0;
     background-color: var(--bg-card);
     border-top: 1px solid var(--border-dark);
     border-bottom: 1px solid var(--border-dark);
 }
 
+.about-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.about-lead {
+    font-size: 17px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.about-box p {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.about-highlights {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.highlight-item i {
+    color: var(--gold);
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+.highlight-item h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 4px;
+}
+
+.highlight-item p {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+/* FOOTER */
 .footer {
     padding: 40px 0;
     background-color: #000000;
