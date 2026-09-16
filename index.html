@@ -3,302 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M ESSA | Bespoke Solid Wood Furniture Islamabad</title>
+
+    <!-- GOOGLE SEARCH TITLE & SEO META TAGS -->
+    <title>M ESSA Furniture | Luxury Solid Wood Furniture Islamabad</title>
     <meta name="title" content="M ESSA Furniture | Luxury Solid Wood Furniture Islamabad">
     <meta name="description" content="M ESSA Furniture Islamabad - Premium luxury Sheesham & Walnut bed sets, sofa sets, dining tables, and custom woodwork. Contact: 03315172956.">
     <meta name="keywords" content="M ESSA Furniture, Furniture Islamabad, Luxury Furniture Pakistan, Sheesham Furniture">
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts & FontAwesome -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="robots" content="index, follow">
 
-    <!-- OPEN GRAPH / SOCIAL MEDIA OVERRIDE (Purana GitHub Text Hatane Ke Liye) -->
+    <!-- OPEN GRAPH / SOCIAL MEDIA OVERRIDE -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rokhanali575-ship-it.github.io/m.essa.furniture/">
-    <meta property="og:title" content="M ESSA Furniture">
+    <meta property="og:title" content="M ESSA Furniture Islamabad">
     <meta property="og:description" content="Luxury Solid Wood Furniture in Islamabad. Custom Designs & Premium Quality.">
     <meta property="og:image" content="logo.png">
 
-    <!-- LOGO FOR GOOGLE SEARCH & FAVICON -->
+    <!-- FAVICON LOGO FOR BROWSER & GOOGLE SEARCH -->
     <link rel="icon" type="image/png" sizes="32x32" href="logo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="logo.png">
-    
+
+    <!-- FONTS & ICONS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- LINK TO STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Top Announcement Bar -->
-    <div class="top-bar">
-        <div class="top-info">
-            <span><i class="fas fa-crown"></i> Handcrafted Solid Wood Masterpieces</span>
-            <span class="location"><i class="fas fa-map-marker-alt"></i> Kuri Road, Islamabad</span>
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="top-announcement">
+        <div class="container top-bar-content">
+            <p><i class="fa-solid fa-tree"></i> Handcrafted Solid Wood Masterpieces &nbsp;|&nbsp; <i class="fa-solid fa-location-dot"></i> Kuri Road, Islamabad</p>
+            <button class="btn-owner-access" id="ownerAccessBtn"><i class="fa-solid fa-user-lock"></i> Owner Access</button>
         </div>
-        <button id="admin-login-btn" onclick="openOwnerPanel()" class="btn-owner-lock">
-            <i class="fas fa-user-shield"></i> Owner Access
-        </button>
     </div>
 
-    <!-- Header Navigation Bar -->
+    <!-- MAIN NAVBAR -->
     <header class="navbar">
-        <div class="logo-container" id="main-logo-container" onclick="switchTab('home')">
-            <h1 class="brand-name">M ESSA</h1>
-            <span class="brand-sub">LUXURY FURNITURE</span>
+        <div class="container nav-container">
+            <div class="brand">
+                <img src="logo.png" alt="M ESSA Logo" class="brand-logo-img">
+                <div class="brand-text">
+                    <span class="brand-title">M ESSA</span>
+                    <span class="brand-subtitle">FURNITURE</span>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-btn active">Home</a></li>
+                    <li><a href="#collections" class="nav-btn">Collections</a></li>
+                    <li><a href="#about" class="nav-btn">About Us</a></li>
+                    <li><a href="#why-us" class="nav-btn">Why Choose Us</a></li>
+                    <li><a href="#contact" class="nav-btn">Showroom & Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li><button class="nav-btn active" data-tab="home" onclick="switchTab('home')">Home</button></li>
-                <li><button class="nav-btn" data-tab="products" onclick="switchTab('products')">Collections</button></li>
-                <li><button class="nav-btn" data-tab="about" onclick="switchTab('about')">About Us</button></li>
-                <li><button class="nav-btn" data-tab="features" onclick="switchTab('features')">Why Choose Us</button></li>
-                <li><button class="nav-btn" data-tab="contact" onclick="switchTab('contact')">Showroom & Contact</button></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Main Content Container (Tab Pages) -->
-    <main class="content-wrapper">
-
-        <!-- TAB 1: HERO & HOME -->
-        <section id="tab-home" class="page-tab active">
-            <div class="hero-card">
-                <div class="hero-overlay"></div>
-                <div class="hero-content">
-                    <span class="hero-badge">Bespoke Architectural Woodwork</span>
-                    <h1>Artisan Craftsmanship.<br>Timeless Heritage.</h1>
-                    <p>Handcrafted 100% solid wood furniture combining traditional Pakistani carving with modern luxury aesthetics.</p>
-                    <div class="hero-btns">
-                        <button onclick="switchTab('products')" class="btn-primary">Explore Catalogue</button>
-                        <button onclick="switchTab('contact')" class="btn-secondary">Visit Showroom</button>
-                    </div>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <span class="section-tag">Bespoke Architectural Woodwork</span>
+                <h1>Artisan Craftsmanship.<br><span class="highlight-gold">Timeless Heritage.</span></h1>
+                <p>Handcrafted 100% solid wood furniture combining traditional Pakistani carving with modern luxury aesthetics.</p>
+                <div class="hero-buttons">
+                    <a href="#collections" class="btn btn-gold">Explore Catalogue</a>
+                    <a href="#contact" class="btn btn-outline">Visit Showroom</a>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Quick Showcase Grid -->
-            <div class="quick-highlights">
-                <div class="highlight-item">
-                    <i class="fas fa-tree"></i>
-                    <h4>Seasoned Sheesham Wood</h4>
-                    <p>Kiln-dried hardwoods guaranteed against warping and termites for generations.</p>
-                </div>
-                <div class="highlight-item">
-                    <i class="fas fa-drafting-compass"></i>
-                    <h4>Custom Floorplans</h4>
-                    <p>Tailor-made designs created precisely for your villa or executive suites.</p>
-                </div>
-                <div class="highlight-item">
-                    <i class="fas fa-gem"></i>
-                    <h4>Hand-Carved Luxury</h4>
-                    <p>Master artisans with decades of perfection in classic and modern finishes.</p>
-                </div>
+    <!-- FEATURES SECTION -->
+    <section id="why-us" class="features-section">
+        <div class="container grid-3">
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-tree"></i></div>
+                <h3>Seasoned Sheesham Wood</h3>
+                <p>Kiln-dried hardwoods guaranteed against warping and termites for generations.</p>
             </div>
-        </section>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                <h3>Custom Floorplans</h3>
+                <p>Tailor-made designs created precisely for your villa or executive suites.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+                <h3>Hand-Carved Luxury</h3>
+                <p>Master artisans with decades of perfection in classic and modern finishes.</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- TAB 2: PRODUCT CATALOGUE -->
-        <section id="tab-products" class="page-tab">
+    <!-- CATALOGUE / COLLECTIONS -->
+    <section id="collections" class="catalogue-section">
+        <div class="container">
             <div class="section-header">
-                <span class="gold-subtitle">EXQUISITE CATALOGUE</span>
+                <span class="section-tag">EXQUISITE CATALOGUE</span>
                 <h2>Luxury Collections</h2>
-                <div class="divider"></div>
             </div>
 
-            <!-- Category Filters -->
-            <div class="category-filter-bar">
-                <button class="cat-btn active" onclick="filterCategory('All')">All Items</button>
-                <button class="cat-btn" onclick="filterCategory('Bed Sets')">Bed Sets</button>
-                <button class="cat-btn" onclick="filterCategory('Sofa Sets')">Sofa Sets</button>
-                <button class="cat-btn" onclick="filterCategory('Dining Tables')">Dining Tables</button>
-                <button class="cat-btn" onclick="filterCategory('Consoles & Tables')">Consoles & Tables</button>
+            <!-- FILTER BUTTONS -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="beds">Bed Sets</button>
+                <button class="filter-btn" data-category="sofas">Sofa Sets</button>
+                <button class="filter-btn" data-category="dining">Dining Tables</button>
+                <button class="filter-btn" data-category="consoles">Consoles & Tables</button>
             </div>
 
-            <div class="product-grid" id="product-grid">
-                <!-- Javascript will load products dynamically -->
-            </div>
-        </section>
-
-        <!-- TAB 3: ABOUT US -->
-        <section id="tab-about" class="page-tab">
-            <div class="about-card">
-                <div class="about-text">
-                    <span class="gold-subtitle">OUR HERITAGE</span>
-                    <h2>Redefining Living Spaces With Solid Wood Elegance</h2>
-                    <div class="divider"></div>
-                    <div id="about-content-body">
-                        <p>At <strong>M ESSA Furniture</strong>, furniture making is practiced as a fine art form. Operating out of Islamabad, we excel in luxury architectural woodwork and bespoke residential furniture.</p>
-                        <p>Our wood sculptors blend age-old Pakistani woodcraft with modern minimalist profiles. Every project uses high-grade seasoned Sheesham, Walnut, and Teak wood, finished with protective lacquer coatings to last lifetimes.</p>
-                    </div>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-box">
-                        <h3>100%</h3>
-                        <p>Solid Hardwood</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>15+</h3>
-                        <p>Master Artisans</p>
-                    </div>
-                    <div class="stat-box">
-                        <h3>10-Yr</h3>
-                        <p>Structure Warranty</p>
-                    </div>
+            <!-- PRODUCT GRID / CONTAINER -->
+            <div id="productGrid" class="product-grid">
+                <div class="empty-state">
+                    <div class="empty-icon"><i class="fa-solid fa-couch"></i></div>
+                    <h3>No Products Found</h3>
+                    <p>Use "Owner Access" at top right to publish products to this section.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- TAB 4: WHY CHOOSE US -->
-        <section id="tab-features" class="page-tab">
+    <!-- ABOUT US DETAILED SECTION -->
+    <section id="about" class="about-section">
+        <div class="container grid-2 align-center">
+            <div class="about-content">
+                <span class="section-tag">OUR HERITAGE</span>
+                <h2>Crafting Wooden Legacy Since Decades</h2>
+                <p class="lead-text">M ESSA Furniture stands as a hallmark of bespoke solid wood artistry in Islamabad, delivering unmatched durability, intricate carving, and timeless elegance.</p>
+                <p>Specializing in 100% seasoned Sheesham and Walnut hardwoods, our master craftsmen bring decades of inherited techniques to every piece—from majestic king-size bed sets to executive dining tables.</p>
+                
+                <div class="about-stats grid-3">
+                    <div class="stat-item">
+                        <h4>100%</h4>
+                        <p>Solid Wood</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>25+</h4>
+                        <p>Years Warranty</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>1000+</h4>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image-card">
+                <div class="image-box">
+                    <img src="logo.png" alt="M ESSA Woodwork" class="about-img">
+                    <div class="badge-overlay">
+                        <span>Authentic Woodcraft</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SHOWROOM & CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
             <div class="section-header">
-                <span class="gold-subtitle">THE M ESSA STANDARD</span>
-                <h2>Why Discerning Clients Choose Us</h2>
-                <div class="divider"></div>
+                <span class="section-tag">VISIT OUR SHOWROOM</span>
+                <h2>Get In Touch</h2>
             </div>
 
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon-wrap"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Anti-Termite Seasoned Wood</h3>
-                    <p>All raw lumber undergoes industrial kiln seasoning and chemical preservation treatments before crafting.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrap"><i class="fas fa-couch"></i></div>
-                    <h3>High-Density Ergonomics</h3>
-                    <p>Sofa sets and upholstery utilize multi-layer high-density foam wrapped in premium stain-resistant velvet and leathers.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="icon-wrap"><i class="fas fa-tools"></i></div>
-                    <h3>Precision Joinery</h3>
-                    <p>Old-world mortise and tenon joinery combined with modern German hardware ensures lifetime structural stability.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- TAB 5: SHOWROOM & CONTACT -->
-        <section id="tab-contact" class="page-tab">
-            <div class="contact-card">
-                <div class="contact-details">
-                    <span class="gold-subtitle">ISLAMABAD SHOWROOM</span>
-                    <h2>Visit Us Today</h2>
-                    <div class="divider"></div>
-                    <p class="lead">Experience wood textures, hand carvings, and luxury finishes in person.</p>
-
-                    <div class="contact-list">
-                        <div class="c-item">
-                            <i class="fas fa-map-marker-alt"></i>
+            <div class="grid-2">
+                <div class="contact-card">
+                    <h3>Contact Information</h3>
+                    <div class="contact-info-list">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
                             <div>
-                                <h4>Showroom Address</h4>
-                                <p>Kuri Road, Near Park Road Intersection, Islamabad, Pakistan</p>
+                                <strong>Showroom Location</strong>
+                                <p>Kuri Road, Main Furniture Hub, Islamabad, Pakistan</p>
                             </div>
                         </div>
-                        <div class="c-item">
-                            <i class="fas fa-phone-alt"></i>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
                             <div>
-                                <h4>Phone & WhatsApp</h4>
-                                <p><a href="tel:03315172956">03315172956</a></p>
+                                <strong>Phone / WhatsApp</strong>
+                                <p>+92 331 5172956</p>
                             </div>
                         </div>
-                        <div class="c-item">
-                            <i class="fas fa-envelope"></i>
+                        <div class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
                             <div>
-                                <h4>Email Enquiries</h4>
-                                <p><a href="mailto:asimmuhammad02@gmail.com">asimmuhammad02@gmail.com</a></p>
+                                <strong>Email Address</strong>
+                                <p>asimmuhammad02@gmail.com</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="contact-map-box">
-                    <div class="map-inner">
-                        <i class="fas fa-compass"></i>
-                        <h3>M ESSA Flagship Store</h3>
-                        <p>Kuri Road, Islamabad</p>
-                        <a href="https://maps.google.com" target="_blank" class="btn-primary">Open Location Map</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Modal Admin Control Center -->
-    <div id="admin-modal" class="modal-overlay hidden">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2><i class="fas fa-sliders-h"></i> Owner Admin Panel</h2>
-                <button onclick="closeOwnerPanel()" class="btn-close">&times;</button>
-            </div>
-            
-            <div class="modal-body">
-                <!-- Add Product Form -->
-                <div class="admin-block">
-                    <h3><i class="fas fa-plus-circle"></i> Add Product To Store</h3>
-                    <form id="add-product-form">
-                        <div class="form-group">
-                            <label>Product Name</label>
-                            <input type="text" id="prod-title" placeholder="e.g. Royal Emperor Bed Set" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Category</label>
-                                <select id="prod-category" required>
-                                    <option value="Bed Sets">Bed Sets</option>
-                                    <option value="Sofa Sets">Sofa Sets</option>
-                                    <option value="Dining Tables">Dining Tables</option>
-                                    <option value="Consoles & Tables">Consoles & Tables</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label>Price (PKR)</label>
-                                <input type="text" id="prod-price" placeholder="e.g. PKR 320,000" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label>Material Spec</label>
-                                <input type="text" id="prod-material" placeholder="e.g. 100% Solid Sheesham">
-                            </div>
-                            <div class="form-group">
-                                <label>Dimensions</label>
-                                <input type="text" id="prod-size" placeholder="e.g. King Size">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Image Direct Link (URL)</label>
-                            <input type="url" id="prod-image" placeholder="https://images.unsplash.com/..." required>
-                        </div>
-                        <div class="form-group">
-                            <label>Description</label>
-                            <textarea id="prod-desc" rows="3" placeholder="Provide product details, polish type, fabric details..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary full-width">Publish To Website</button>
-                    </form>
-                </div>
-
-                <!-- Custom Logo & About Form -->
-                <div class="admin-block">
-                    <h3><i class="fas fa-cog"></i> Branding Settings</h3>
-                    <form id="brand-settings-form">
-                        <div class="form-group">
-                            <label>Logo Image Link (URL)</label>
-                            <input type="url" id="brand-logo-url" placeholder="Paste image link for logo">
-                        </div>
-                        <div class="form-group">
-                            <label>Update About Us Content</label>
-                            <textarea id="brand-about-text" rows="4" placeholder="Update company info..."></textarea>
-                        </div>
-                        <button type="submit" class="btn-secondary full-width">Save Settings</button>
+                <div class="contact-card">
+                    <h3>Send Inquiry</h3>
+                    <form id="contactForm" class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="tel" placeholder="Phone Number" required>
+                        <textarea placeholder="Describe your furniture requirement..." rows="4" required></textarea>
+                        <button type="submit" class="btn btn-gold w-100">Submit Inquiry</button>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 <strong>M ESSA Furniture</strong>. All Rights Reserved. Artisanal Solid Wood Craftsmanship.</p>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 M ESSA Furniture Islamabad. All Rights Reserved.</p>
+            <p class="designer-tag">Crafted with Luxury Standards</p>
         </div>
     </footer>
 
+    <!-- JAVASCRIPT LINK -->
     <script src="script.js"></script>
 </body>
 </html>
