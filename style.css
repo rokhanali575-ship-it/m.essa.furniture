@@ -395,54 +395,62 @@ body {
     font-size: 12px;
 }
 
-/* About & Features */
-.about-card, .contact-card {
-    background: var(--card-bg);
-    padding: 40px;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+/* ABOUT SECTION DETAILED STYLING */
+.about-section {
+    padding: 80px 0;
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-dark);
+    border-bottom: 1px solid var(--border-dark);
 }
 
-.about-stats {
+.about-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.about-lead {
+    font-size: 17px;
+    color: var(--text-light);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.about-box p {
+    color: var(--text-muted);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.about-highlights {
+    margin-top: 35px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 20px;
 }
 
-.stat-box {
-    background: rgba(0,0,0,0.3);
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    border-left: 3px solid var(--gold);
+.highlight-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
 }
 
-.stat-box h3 {
-    font-size: 32px;
+.highlight-item i {
     color: var(--gold);
+    font-size: 20px;
+    margin-top: 3px;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.highlight-item h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: var(--text-light);
+    margin-bottom: 4px;
 }
 
-.feature-card {
-    background: var(--card-bg);
-    padding: 30px;
-    border-radius: var(--radius);
-    border: 1px solid rgba(255,255,255,0.08);
-}
-
-.icon-wrap {
-    font-size: 28px;
-    color: var(--gold);
-    margin-bottom: 15px;
+.highlight-item p {
+    font-size: 13px;
+    color: var(--text-muted);
 }
 
 /* Contact */
